@@ -191,7 +191,12 @@ public class CalendarAdapter extends BaseAdapter {
 		int j = 1;
 		int flag = 0;
 		String lunarDay = "";
-
+          	for(int i=0;i<7;i++){
+                     int days=dayOfWeek+sc.getDaysOfMonth(isLeapyear, month)+i;
+                    if (days%7==0){
+               	dayNumber=new String[days];
+                       }
+		}
 		// 得到当前月的所有日程日期(这些日期需要标记)
 
 		for (int i = 0; i < dayNumber.length; i++) {
